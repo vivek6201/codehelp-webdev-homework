@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3 - Contact Form</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: space-around;
+        }
+        .content{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Contact Page</h1>
+    <h2>Fill this form to contact me</h2>
+    <form action="">
+        
+        <div class="content">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+        </div>
+
+        <div class="content">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="content">
+            <label for="contact">Contact Number: </label>
+            <input type="number" name="contact" id="contact">
+        </div>
+        
+        <div class="content">
+            <label for="gender">Gender: </label>
+            <select name="gender" id="gender">
+                <option value="none" selected>- Select -</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        
+        <div class="content">
+            <label for="dob">Date Of Birth: </label>
+            <input type="date" name="dob" id="dob">
+        </div>
+
+        <div class="content">
+            <label for="rating">Rating: </label>
+            <span class="radio-option">
+                <label for="1">1</label>
+                <input type="radio" name="rating" id="1">
+            </span> 
+            <span class="radio-option">
+                <label for="2">2</label>
+                <input type="radio" name="rating" id="2">
+            </span>   
+            <span class="radio-option">
+                <label for="3">3</label>
+                <input type="radio" name="rating" id="3">
+            </span>
+            <span class="radio-option">
+                <label for="4">4</label>
+                <input type="radio" name="rating" id="4">
+            </span>
+            <span class="radio-option">
+                <label for="5">5</label>
+                <input type="radio" name="rating" id="5">
+            </span>
+        </div>
+        <div class="content">
+            <label for="text">Enter your message</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your text"></textarea>
+        </div>
+        <div class="content">
+            <input type="submit" value="Send" >
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
