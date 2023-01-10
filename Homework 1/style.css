@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    background-color: aliceblue;
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 1rem 2rem;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+main #research h2{
+    margin-bottom: 1rem;
+}
+
+main #details{
+    margin: 2rem 0;
+}
+
+main #details h2{
+    margin-bottom: 1rem ;
+}
+main #details ul{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+main #resources h2{
+    margin-bottom: 1rem;
+}
+main #resources ul{
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+main #resources ul li{
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+main #resources ul li:hover{
+    scale: 1.1;
+    background-color: honeydew;
+}
+main #resources ul li a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0 0.5rem 0;
+    border-bottom: 1px solid black;
+}
+
+
+#left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#left .navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#left .navbar li{
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+#left .navbar li:hover{
+    scale: 1.1;
+}
+
+#left .navbar li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#right figure img{
+    width: 10rem;
+    margin: 2rem 0;
+}
+
+#right figure{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
