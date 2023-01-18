@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@500;700&family=Roboto+Flex&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8rem repeat(3, 1fr);
+  gap: 8rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  padding: 0 4rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar .logo {
+  text-align: center;
+}
+
+.navbar .logo img {
+  width: 70px;
+}
+
+.navbar .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  max-width: 600px;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  margin: 0 0.5rem;
+  height: 2rem;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav li:hover {
+  color: #4e5dc0;
+  border-bottom: 1px solid #4e5dc0;
+  transition: all 0.3s ease;
+}
+
+.navbar .navBtn {
+  display: flex;
+  justify-content: end;
+}
+
+.navBtn button {
+  width: 165px;
+  height: 54px;
+  border-radius: 5px;
+  border: none;
+
+  color: #ffffff;
+  font-weight: 700;
+  background: #4e5dc0;
+  line-height: 24px;
+}
+
+.hero,
+.main {
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+  justify-items: center;
+  padding: 1rem 2rem;
+}
+
+.desc {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+}
+
+.desc h2 {
+  display: inline-block;
+  width: fit-content;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 45px;
+  padding-bottom: 0.8rem;
+
+  color: #16171c;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+  font-variation-settings: "GRAD" 122, "slnt" 0, "XTRA" 603, "XOPQ" 96,
+    "YOPQ" 100, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+
+.desc p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  /* or 170% */
+
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 390px;
+  font-family: "Manrope", sans-serif;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.footer .left {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer .left h2 {
+  text-decoration: underline;
+}
+
+.footer h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+
+  color: #4e5dc0;
+}
+
+.footer .left p {
+  width: 160px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+
+  color: #999999;
+}
+
+.footer .left1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left1 p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+  max-width: 20rem;
+}
+
+.footer .right .ft-links {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  list-style: none;
+
+  color: #999999;
+}
+
+.socials {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+
+.socials li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 0.5rem;
+  background: #4e5dc0;
+}
+
+.socials li:hover{
+  cursor: pointer;
+  background-color: #162579;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .desc h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .desc p{
+    font-size: 18px;
+    line-height: 30px;
+    justify-content: space-around;
+  }
+
+  .hero img,.main img{
+    width:480px;
+  }
+}
