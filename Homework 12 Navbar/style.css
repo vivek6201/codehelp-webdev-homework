@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --deepBlue: #02042a;
+    --lightBlue: #2b84ea;
+    --lightBlue300: #4b94ed;
+    --lightBlue500: #0b72e7;
+    --greenLight: #61cea6;
+    --grayText: #818597;
+    --lightGray: #e2e2e2;
+    --grayBlue: #344a6c;
+    --deepBlueHead: #162f56;
+    --gray2: #525a76;
+}
+
+.banner{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-family: "Mulish",sans-serif;
+    gap: 1rem;
+}
+
+.banner > p{
+    font-size: 1.1rem;
+}
+
+.banner > .banner-btn{
+    background-color: var(--lightBlue500);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.navbar{
+    background-color: var(--deepBlue);
+    font-family: "Mulish",sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.logo a img{
+    width: 125px;
+    height: 30px;
+}
+
+nav .list{
+    display: flex;
+    list-style-type: none;
+}
+
+nav .list .list-items{
+    padding: 1.7rem 1.2rem;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-items > a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.list-items > div{
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 0.30rem;
+    background-color: var(--lightBlue500);
+    display: none;
+    margin: 0 auto;
+}
+
+.list-items:hover a{
+    color: var(--lightBlue300);
+}
+
+.list-items:hover > div{
+    display: block;
+}
+
+.btns{
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns > img{
+    width: 2rem;
+    margin: 0 0.8rem;
+}
+
+.btns .login{
+    background-color: transparent;
+    border: 1px solid var(--lightBlue);
+    color: white;
+    font-weight: bold;
+    font-size: 0.88rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.btns .signup{
+    background-color: white;
+    color: var(--lightBlue300);
+    font-size: 0.88rem;
+    padding: 1rem 2rem;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}  
+
+.signup:hover{
+    color: var(--lightBlue500);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website | Vivek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="sidebar">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./assets/userAsset/NavLogo.jpg" alt="logo" />
+                    <span>ohn Doe</span>
+                </div>
+                <div id="logo-border"></div>
+            </div>
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-items">
+                        <a href="#home">Home</a>
+                        <div class="item-border"></div>
+                    </li>
+                    <li class="list-items">
+                        <a href="#skills">Skills</a>
+                        <div class="item-border"></div>
+                    </li>
+                    <li class="list-items">
+                        <a href="#Projects">Projects</a>
+                        <div class="item-border"></div>
+                    </li>
+                    <li class="list-items">
+                        <a href="#Contact">Contact</a>
+                        <div class="item-border"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div id="home">
+                <div class="hero-section-left">
+                    <h2>Hii! I am <span>Vivek</span></h2>
+                    <h2>I am a <span class="typed"></span></h2>
+                    <p>I'm a software developer and here is my portfolio website. Here you’ll learn about my journey as
+                        a software developer.</p>
+                    <button class="cta-btn">Hire Me</button>
+                </div>
+
+                <div class="hero-section-right">
+                    <div class="image-container">
+                        <img src="assets/userAsset/UserImage.png" class="user-image" alt="UserImage" />
+                        <img src="assets/userAsset/cube.png" alt="cube" class="icon-cube" />
+                        <img src="assets/userAsset/dots.png" alt="dots" class="icon-dots" />
+                        <img src="assets/userAsset/zigzags.png" alt="zigzagsImage" class="icon-zigzag" />
+                        <img src="assets/userAsset/plus.png" alt="plus" class="icon-plus" />
+                        <img src="assets/userAsset/circle.png" alt="circle" class="icon-circle" />
+                    </div>
+                </div>
+                <h2 class="name">John Doe</h2>
+            </div>
+            <div id="skills">
+                hello
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".typed", {
+            strings: [
+                "Full Stack Developer",
+                "Web Developer",
+                "UI-UX Designer",
+                "Backend Developer",
+                "Coder",
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
+</body>
+
+</html>
